@@ -94,7 +94,7 @@
 	</dependencies>
 	
 	<distributionManagement>
-	<!--
+	
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
@@ -106,7 +106,7 @@
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://3.69.230.69:8081/repository/Wallmart-snapshot/</url>
 	    </snapshotRepository>
-	  -->  
+	  
 	</distributionManagement>
 	
 	<build>
