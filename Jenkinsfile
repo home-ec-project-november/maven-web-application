@@ -18,13 +18,14 @@ node('nodes'){
     {
         sh "${mavenHome}/bin/mvn clean deploy"
     }
+    /*
     stage('DeployAppIntoTomcatServer')
-    {   
-        sshagent(['e04b4102-ecb8-46d3-8fc7-38999b82d70c']) {
+    { 
+            sshagent(['e04b4102-ecb8-46d3-8fc7-38999b82d70c']) {
         sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@35.157.76.240:/opt/tomcat/webapps"
         }
     }  
-    /*
+    */
     stage('SendEmailNotification')
     {
         emailext body: 'Build is over !', subject: 'Build over!', to: 'k.ravshan1972@gmail.com'
