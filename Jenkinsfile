@@ -25,7 +25,7 @@ node('nodes'){
         sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@35.157.76.240:/opt/tomcat/webapps"
         }
     }  
-    */
+    
     stage('SendEmailNotification')
     {
         emailext body: 'Build is over !', subject: 'Build over!', to: 'k.ravshan1972@gmail.com'
