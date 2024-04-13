@@ -10,5 +10,5 @@ services:
 networks:
   mavenappbridge:
     name: mavenappbridge
-    #driver: bridge
-    external: true    
+    driver: bridge
+    #external: true    
